@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="de"><!-- lang fehlt -->
+
+<head>
+    <!-- meta charset fehlt -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Studio Ghibli Biography</title>
+    <meta name="date" content="2024-04-04">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/observe.js" defer></script>
+    <script src="../js/formular.js" async defer></script>
+</head>
+
+<body>
+    <!-- header ist überflüssig-->
+    <h1>Studio Ghibli</h1>
+    <img src="../pics/studio_gibli.png" alt="Studio Gibli Logo">
+
+    <nav>
+        <ul>
+            <!-- Verlinkungen innerhalb des Dokumentes beginnen mit einem #. -->
+            <!-- Verlinkungen innerhalb der nav werden stärker von Suchmaschinen gewichtet. -->
+            <li><a href="#Geschichte">Geschichte</a></li>
+            <li><a href="#MerkmaledesStudios">Merkmale des Studios</a></li>
+            <li><a href="#Filmografie">Filmografie</a></li>
+            <li><a href="#Ghibli-Museum">Ghibli-Museum</a></li>
+        </ul>
+    </nav>
+    <main>
+        <!-- Navigation ergänzen -->
+        <!-- main für alle folgenden Inhalte -->
+        <article>
+            <p>Ist ein japanisches Zeichentrickfilmstudio.
+                Bekannte Anime-Produktionen des Studios sind zum Beispiel Das Schloss im Himmel,
+                Mein Nachbar Totoro, Prinzessin Mononoke,
+                Chihiros Reise ins Zauberland und Das wandelnde Schloss.
+            </p>
+        </article>
+
+        <details open>
+            <summary><strong>Studio Ghibli</strong></summary>
+            <!-- border entfernen -->
+            <!-- Das ist inhaltlich (semantisch) keine Tabelle. Finden Sie ein besseres Elment. Vielleicht eine Liste. -->
+            <ul> <!--Frage, ob border und cellspacing erlaubt sind? ja kann man machen-->
+                <!--wenn ich tbody weglasse passiert genau das gleiche warum, was ist der Unterschied??? kann man in 90% der Fälle weglassen. tbody, thead und tfoot braucht man nicht zu benutzen.-->
+                <li>Rechtsform: Kabushiki-gaisha</li>
+                <li>Gründung: 15. Juni 1985</li>
+                <li>Sitz: Kajino-chō</li>
+                <li>Leitung: Kiyofumi Nakajima (CEO &amp; Präsident),Kōji Hoshino</li>
+                <li>Website: <a href="https://www.ghibli.jp/">www.ghibli.jp</a></li>
+            </ul>
+        </details>
+        <!-- div ist überflüssig, header auch -->
+        <div id="main-articles">
+
+            <article id="Geschichte">
+
+                <h2>Geschichte</h2>
+                <img src="../pics/Hayao_Miyazaki.jpg" alt="Hayao Miyazaki">
+                <img src="../pics/Isao_Takahata.jpg" alt="Isao Takahata">
+                <img src="../pics/Toshio_Suzuki.jpg" alt="Toshio Suzuki">
+                <p>
+                    Der Film <a
+                        href="https://de.wikipedia.org/wiki/Nausica%C3%A4_aus_dem_Tal_der_Winde_(Anime)"><em>Nausicaä
+                            aus
+                            dem Tal der Winde</em></a> von Hayao Miyazaki war
+                    1984 an den japanischen Kinokassen sehr erfolgreich und führte dazu,
+                    dass die Produktionsfirma Tokuma Shoten 1985 das Studio Ghibli gründete.
+                    Die Beschäftigten stammten zum Teil aus dem Studio Top Craft,
+                    das Nausicaä produziert hatte und zuvor vor allem mit Auftragsproduktionen aus dem Ausland
+                    beschäftigt
+                    war.
+                    So entstand Das letzte Einhorn bei Top Craft, direkt vor Nausicaä.
+                </p>
+
+            </article>
+            <article id="MerkmaledesStudios">
+
+                <h2>Merkmale des Studios</h2>
+                <p>
+                    Studio Ghibli ist zusammen mit Hayao Miyazaki als Regisseur international sehr bekannt und
+                    konzentriert
+                    sich fast ausschließlich auf Kinofilme in hoher Qualität. Damit ist es ein Sonderfall unter den
+                    japanischen Animationsstudios,
+                    die sonst weder über so starke Markenbekanntschaft verfügen,
+                    noch sich auf wenige Produktionen in dieser Qualität konzentrieren können oder wollen.
+                </p>
+
+            </article>
+            <article id="Filmografie">
+
+                <h2>Filmografie</h2>
+                <table>
+                    <caption>Spielfilme</caption>
+                    <tr>
+                        <th>Name</th>
+                        <th>Jahr</th>
+                        <th>Genre</th>
+                        <th>Dauer</th>
+                    </tr>
+                    <tr>
+                        <td><a href="https://de.wikipedia.org/wiki/Das_Schloss_im_Himmel">Das Schloss im Himmel</a>
+                        </td>
+                        <td>1986</td>
+                        <td>Fantasyfilm</td>
+                        <td>125 Min</td>
+                    </tr>
+                    <tr>
+                        <td>Mein Nachbar Totoro</td>
+                        <td>1988</td>
+                        <td>Fantasyfilm</td>
+                        <td>87 Min</td>
+                    </tr>
+                    <tr>
+                        <td>Die letzten Glühwürmchen</td>
+                        <td>1988</td>
+                        <td>Animation, Drama, War</td>
+                        <td>89 Min</td>
+                    </tr>
+                    <tr>
+                        <td>Kikis kleiner Lieferservice</td>
+                        <td>1989</td>
+                        <td>Family, Animation, Fantasy</td>
+                        <td>103 minutes</td>
+                    </tr>
+                    <tr>
+                        <td>Tränen der Erinnerung - Only Yesterday</td>
+                        <td>1991</td>
+                        <td>Animation, Drama, Romance</td>
+                        <td>118 Min</td>
+                    </tr>
+                </table>
+                <table>
+                    <caption>Kurzfilme</caption>
+                    <tr>
+                        <th>Name</th>
+                        <th>Jahr</th>
+                        <th>Genre</th>
+                        <th>Dauer</th>
+                    </tr>
+                    <tr>
+                        <td><a href="https://de.wikipedia.org/wiki/On_Your_Mark">On Your Mark</a></td>
+                        <td>1995</td>
+                        <td>Musikvideo</td>
+                        <td>7 Minuten</td>
+                    </tr>
+                    <tr>
+                        <td>Ghiblies: Episode 1</td>
+                        <td>2000</td>
+                        <td>Comedy</td>
+                        <td>12 Minuten</td>
+                    </tr>
+                    <tr>
+                        <td>Ghiblies: Episode 2</td>
+                        <td>2002</td>
+                        <td>Comedy</td>
+                        <td>12 Minuten</td>
+                    </tr>
+                    <tr>
+                        <td>Mei to Koneko Bus</td>
+                        <td>2002</td>
+                        <td>Family, Animation, Adventure</td>
+                        <td>14 Minuten</td>
+                    </tr>
+                </table>
+
+            </article>
+            <article id="Ghibli-Museum">
+
+                <h2>Ghibli-Museum</h2>
+                <p>
+                    In der Tokioter Vorstadt Mitaka am Inokashira-Park gibt es ein in Anlehnung an den Stil des
+                    österreichischen
+                    Künstlers Friedensreich Hundertwasser gestaltetes Ghibli-Museum, in dem unter anderem
+                    Originalzeichnungen
+                    und -entwürfe besichtigt werden können und eigens für das Museum produzierte Anime-Kurzfilme
+                    gezeigt
+                    werden.
+                    Bei Kindern erfreut sich vor allem das riesige Plüschmodell des „Katzenbus“ aus Mein Nachbar
+                    Totoro
+                    großer
+                    Beliebtheit.
+                    Für jeden Tag gibt es nur eine begrenzte Zahl von Eintrittskarten,
+                    die ausschließlich über Vorbestellung erhältlich sind.
+                    In Japan können sie frühestens einen Monat vorher bei der Kombinikette Lawson erworben werden,
+                    im Ausland frühestens drei Monate vorher bei verschiedenen weltweiten offiziellen Verkaufsbüros.
+                </p>
+                <figure>
+                    <img src="../pics/Ghibli_Studio.jpg" alt="Ghibli Studio">
+                    <img src="../pics/Ghibli-museum-mitaka.jpg" alt="museum mitaka">
+                </figure>
+
+            </article>
+
+                <h2 id="geschauterFilm">Meist Geschauter Film</h2>
+                <figure>
+                    <img src="../pics/spirited_away.jpg" alt="sa">
+                    <img src="../pics/spirited_away_2.jpg" alt="sa2">
+                    <figcaption>Spirited Away</figcaption>
+                </figure>
+
+            <form id="reviewForm" method="post">
+                <h1>Studio bewerten</h1>
+                <fieldset>
+                    <div>
+                        <label for="email">Ihre E-Mail-Adresse:</label>
+                        <input type="email" id="email" name="email" placeholder="Ihre E-Mail-Adresse" required>
+                    </div>
+                    <div>
+                        <label for="review">Geben Sie Ihre Bewertung ab:</label>
+                        <textarea id="review" name="review" minlength="6" rows="8" cols="50" placeholder="Ihre Meinung zum Studio"
+                            required></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" value="Absenden">
+                        <input type="reset" value="Zurücksetzen">
+                    </div>
+                </fieldset>
+                <div id="heart-container">
+                    <img id="heart" src="../pics/heart.jpg" alt="Heart">
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+// mixins für wiederkehrende Design Blöcke
+@mixin nav($clr-bg, $clr-sc,$margin: 2%, $padding: 1%, $text-align: center, $font-size: 1.2rem) {
+    ul {
+        font-size: $font-size;
+        font-family: 'Courier New', Courier, monospace;
+        list-style: none;
+        padding: $padding;
+        margin-bottom: $margin;
+
+        li {
+            background: $clr-bg;
+            border: .5px dashed $clr-sc;
+            margin: $margin;
+
+            a {
+                text-decoration: none;
+                padding: 0.5em 1em;
+                transition: background 0.5s ease;
+                display: block;
+
+                &:hover {
+                    background: $clr-sc;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+/* folgende properties werden immer gesetzt */
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+/* Elemente werden nie größer als das Eltern Element. */
+img{
+    max-width: 100%;
+}
+/* Verhältnis der fonts zueinander in rem,
+s. font Datei. */
+:root{
+    font-family: Arial, sans-serif;
+}
+
+/* Reset der Standardstile */
+body, h1, h2, h3, p, ul, li, table, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+table, th, td {
+    border: 1px solid var(--secondary-color);
+}

@@ -1,0 +1,82 @@
+@media print {
+    form {
+        display: none;
+    }
+
+    a:not(nav a)::after {
+        content: attr(href);
+        display: block;
+    }
+
+    div {
+        display: block;
+    }
+
+    p {
+        font-size: 15pt;
+    }
+}
+
+@media (max-width: 575px) {
+    /* Allgemeine Anpassungen */
+    body {
+        font-size: 0.4em;
+    }
+    p{
+        font-size: 2.2em;
+    }
+
+    h1, h2 {
+        font-size: 4em;
+        margin: 0.5em 0;
+    }
+
+    /* Bilder und Formulare anpassen */
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    form {
+        padding: 0 5px;
+    }
+    form{
+        label{
+            font-size: 2em;
+        }
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+    }
+
+    #main-articles {
+        padding: 0 5px;
+    }
+
+    table {
+        width: 100%;
+        font-size: 2em;
+    }
+    table{
+        caption{
+            font-size: 1.4em;
+        }
+    }
+
+    table th, table td {
+        padding: 3px;
+        text-align: center;
+    }
+
+    nav ul li {
+        font-size: 0.9em;
+    }
+    details{
+        ul{
+            font-size: 2.5em;
+        }
+    }
+}

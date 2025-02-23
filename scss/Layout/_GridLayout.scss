@@ -1,0 +1,22 @@
+body {
+    nav {
+        ul {
+            li {
+                display: grid;
+                text-align: center;
+            }
+
+            display: grid;
+            gap: 1em;
+            grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+        }
+    }
+    
+    table {
+        border-collapse: collapse;
+        margin-bottom: 2em;
+        display: grid;
+        place-items: center;
+        gap: 1em;
+    }
+}
